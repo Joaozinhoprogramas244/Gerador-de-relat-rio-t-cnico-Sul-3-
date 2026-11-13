@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10243a"><title>Sul 3 | Relatório Técnico</title>
+<style>
+:root{--navy:#10243a;--panel:#fff;--bg:#f2f5f9;--ink:#172536;--muted:#64748b;--line:#dce4ed;--cyan:#087e9b;--pale:#eaf7fa}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font:15px system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}header{background:var(--navy);color:white;padding:18px max(16px,calc((100vw - 920px)/2));display:flex;align-items:center;gap:12px}.logo{width:42px;height:42px;border-radius:12px;background:#36c4dc;color:#082333;display:grid;place-items:center;font-weight:900}header h1{font-size:17px;margin:0}header p{font-size:12px;color:#b9c9d8;margin:3px 0 0}.wrap{max-width:920px;margin:24px auto;padding:0 14px 50px}.intro{margin-bottom:16px}.intro h2{margin:0 0 5px;font-size:22px}.intro p{margin:0;color:var(--muted);font-size:13px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0;box-shadow:0 4px 18px #10243a08}.card h3{font-size:15px;margin:0 0 14px;display:flex;align-items:center;gap:8px}.num{width:25px;height:25px;border-radius:8px;background:var(--pale);color:var(--cyan);display:grid;place-items:center;font-size:12px;font-weight:800}.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}label{font-size:12px;font-weight:700;color:#42556b}input,select,textarea{width:100%;padding:11px 12px;border:1px solid #ccd7e2;border-radius:10px;background:#fff;color:var(--ink);font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:#1595b0;box-shadow:0 0 0 3px #1595b018}textarea{min-height:90px;resize:vertical}.hint{font-size:11px;color:var(--muted);font-weight:400}.school-options{position:relative;z-index:20;max-height:260px;overflow-y:auto;-webkit-overflow-scrolling:touch;border:1px solid #ccd7e2;border-radius:10px;background:#fff;box-shadow:0 8px 22px #10243a18;margin-top:2px}.school-options.hidden{display:none!important}.school-option{display:block;width:100%;padding:13px 12px;text-align:left;border:0;border-bottom:1px solid #edf1f5;background:#fff;color:var(--ink);font:inherit;font-size:14px;line-height:1.35;cursor:pointer;touch-action:manipulation}.school-option:last-child{border-bottom:0}.school-option:active,.school-option.active{background:#eaf7fa;color:#075c70}.school-empty{padding:13px;color:var(--muted);font-size:13px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:750;cursor:pointer;background:#087e9b;color:white}.btn.alt{background:white;border:1px solid var(--line);color:#23384c}.btn:disabled{opacity:.5}.siggrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.sigbox{border:1px solid var(--line);border-radius:12px;padding:10px}.sigbox canvas{width:100%;height:120px;-webkit-user-select:none;user-select:none;border:1px dashed #aebdcb;border-radius:8px;touch-action:none;background:#fcfdff;display:block}.sigtools{display:flex;justify-content:space-between;align-items:center;margin-top:7px}.sigtools button{background:#edf2f6;border:0;border-radius:8px;padding:6px 10px;color:#31465a}.notice{padding:12px;background:#fff8e8;border:1px solid #f1dfb6;border-radius:11px;font-size:12px;color:#71521c;line-height:1.5}.hidden{display:none!important}.report{background:white;color:#17202c;padding:30px;max-width:850px;margin:auto}.report h1{text-align:center;font-size:19px;margin:24px 0 4px}.report .sub{text-align:center;font-size:12px;margin:0 0 22px}.report table{width:100%;border-collapse:collapse;font-size:12px}.report td{border:1px solid #cbd3dc;padding:9px;vertical-align:top;white-space:pre-wrap}.report td:first-child{width:25%;font-weight:700;background:#f2f5f8}.report .signatures{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:58px;text-align:center}.report .signatures img{max-height:75px;max-width:100%;object-fit:contain;display:block;margin:0 auto 5px}.report .signline{border-top:1px solid #333;padding-top:7px;font-size:11px}.report .foot{font-size:10px;color:#586575;margin-top:30px}.reporthead{display:flex;justify-content:space-between;gap:12px;font-size:11px}.footer{text-align:center;color:#8794a3;font-size:11px;margin:22px}
+@media(max-width:650px){.grid,.siggrid{grid-template-columns:1fr}.full{grid-column:auto}.card{padding:14px}.wrap{margin:17px auto}.report{padding:15px}.report .signatures{gap:18px}.report td:first-child{width:32%}}
+@page{size:A4;margin:12mm}@media print{html,body{background:#fff!important;margin:0!important;padding:0!important;height:auto!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.no-print,header,.wrap{display:none!important}#reportView{display:block!important;visibility:visible!important;position:static!important;width:100%!important}.report{display:block!important;visibility:visible!important;padding:0!important;margin:0 auto!important;max-width:none!important;width:100%!important}.report h1{break-after:avoid;page-break-after:avoid}.report tr{break-inside:avoid;page-break-inside:avoid}}
+</style></head><body>
+<header><div class="logo">S3</div><div><h1>DIRETORIA DE ENSINO – REGIÃO SUL 3</h1><p>Registro formal de atendimento técnico • Equipe de suporte</p></div></header>
+<main class="wrap" id="formView">
+<div class="intro"><h2>Novo relatório técnico</h2><p>Preencha somente as informações do atendimento realizado. Ao finalizar, gere o documento para conferência, assinatura e impressão em PDF.</p></div>
+<div class="notice">Ferramenta exclusiva para elaboração de relatórios técnicos dos atendimentos realizados nas unidades escolares. Os dados preenchidos permanecem neste dispositivo durante o uso e não são enviados a um servidor. Cadastro de unidades baseado na relação institucional “DER Sul 3 – Escolas Estaduais, Atualização 2026” (113 registros), publicada pela Unidade Regional de Ensino Sul 3. Unidades municipalizadas ou paralisadas permanecem identificadas conforme a própria relação oficial.</div>
+<form id="reportForm">
+<section class="card"><h3><span class="num">1</span> Identificação do atendimento</h3><div class="grid">
+<div class="field full"><label>Unidade escolar *</label><input id="school" type="text" placeholder="Digite para localizar a escola" autocomplete="off" autocapitalize="off" spellcheck="false" aria-autocomplete="list" aria-controls="schoolOptions" aria-expanded="false" required>
+<div id="schoolOptions" class="school-options hidden" role="listbox" aria-label="Unidades escolares"></div>
+<p class="hint">Digite parte do nome e toque na unidade desejada para selecionar.</p></div>
+<div class="field"><label>Código CIE</label><input id="cie" readonly placeholder="Preenchido automaticamente"></div>
+<div class="field"><label>Data do atendimento *</label><input id="date" type="date" required></div>
+<div class="field"><label>Analista responsável *</label><input id="analyst" placeholder="Nome do analista" required></div>
+<div class="field"><label>Responsável que acompanhou na escola</label><input id="schoolContact" placeholder="Nome e função"></div>
+<div class="field"><label>Setor / ambiente</label><input id="location" placeholder="Ex.: sala 09, secretaria, laboratório"></div>
+</div></section>
+<section class="card"><h3><span class="num">2</span> Equipamento ou serviço atendido</h3><div class="grid">
+<div class="field"><label>Tipo de atendimento *</label><select id="type" required><option value="">Selecione</option><option>Computador / notebook</option><option>Impressora / scanner</option><option>Rede cabeada / internet</option><option>Wi-Fi / Access Point</option><option>Switch / roteador</option><option>Tablet / dispositivo móvel</option><option>Projetor / equipamento multimídia</option><option>Software / Windows</option><option>Outro</option></select></div>
+<div class="field"><label>Equipamento / identificação</label><input id="equipment" placeholder="Ex.: AP09, notebook da secretaria"></div>
+<div class="field"><label>Marca / modelo</label><input id="model" placeholder="Marca e modelo, se aplicável"></div>
+<div class="field"><label>Patrimônio / número de série</label><input id="asset" placeholder="Número ou identificação"></div>
+</div></section>
+<section class="card"><h3><span class="num">3</span> Descrição do atendimento</h3><div class="grid">
+<div class="field full"><label>Descrição do atendimento — o que foi feito? *</label><textarea id="work" required placeholder="Descreva somente os serviços, ajustes, testes, configurações ou reparos executados."></textarea></div>
+</div></section>
+<section class="card"><h3><span class="num">4</span> Assinaturas</h3><div class="grid" style="margin-bottom:13px">
+<div class="field"><label>Nome do responsável da escola *</label><input id="signer" placeholder="Nome completo" required></div>
+<div class="field"><label>Função / cargo</label><input id="signerRole" placeholder="Ex.: Diretor, vice-diretor, GOE"></div>
+</div><div class="siggrid">
+<div class="sigbox"><label>Assinatura do analista</label><canvas id="sigAnalyst" width="600" height="220"></canvas><div class="sigtools"><span class="hint">Assine com o dedo ou mouse</span><button type="button" onclick="clearSig('sigAnalyst')">Limpar</button></div></div>
+<div class="sigbox"><label>Assinatura do responsável da escola</label><canvas id="sigSchool" width="600" height="220"></canvas><div class="sigtools"><span class="hint">Assine com o dedo ou mouse</span><button type="button" onclick="clearSig('sigSchool')">Limpar</button></div></div>
+</div><p class="hint">A assinatura capturada é uma imagem inserida no relatório. Ela não equivale, por si só, a uma assinatura digital qualificada.</p></section>
+<div class="actions no-print"><button class="btn" type="submit">Gerar relatório</button><button class="btn alt" type="button" onclick="resetAll()">Limpar formulário</button></div>
+</form><div class="footer">Sul 3 • Ferramenta de apoio à elaboração de relatórios técnicos • A geração direta de PDF requer conexão com a internet; a impressão em PDF pode ser usada como alternativa.</div>
+</main>
+<section id="reportView" class="hidden"></section>
+<script>
+const schoolNames=["ADA PELLEGRINI GRINOVER", "ADELAIDE ROSA FERNANDES MACHADO DE SOUZA PROFA", "ADOLFO CASAIS MONTEIRO PROF", "ADRIÃO BERNARDES PROF", "AFRANIO DE OLIVEIRA", "ALBERTO SALOTTI PROF", "ALEXANDRE ANSALDO MOZZILLI PROF", "ALEXANDRE MARCONDES FILHO SENADOR", "ANA LUIZA FLORENCE BORGES PROFA", "ANA MARIA BENTO", "ANIZ BADRA DR", "ANTONIO CANDIDO DE MELLO E SOUZA PROF", "ANTONIO PEREIRA LIMA DR", "ARGEO PINTO DIAS ENG", "AURELIO CAMPOS DEPUTADO", "AYRTON SENNA DA SILVA", "BEATRIZ LOPES PROFA", "BELKICE MANHÃES REIS PROFA (Municipalizada a partir de 2024)", "BENEDITO CELIO DE SIQUEIRA PROF", "BENEDITO FERREIRA DE ALBUQUERQUE PROF", "CALHIM MANOEL ABUD", "CALIA MAESTRO", "CANDIDO DE OLIVEIRA PROF", "CARLOS AYRES PROF", "CARLOS CATTONY PROF", "CARLOS DE MORAES ANDRADE PROF", "CHACARA DAS CORUJAS (Paralisada em 2021)", "CHRISTIANO ALTENFELDER SILVA DR", "CLARICE SEIKO IKEDA CHAGAS", "CLARINA AMARAL GURGEL PROFA (Municipalizada)", "CLAUDIRENE APARECIDA JOSÉ DA SILVA PROFA", "CONDOMINO VARGEM GRANDE II", "DAVID ZEIGER", "DUARTE LEOPOLDO E SILVA DOM", "ELOELY NERY NAMBUM DIRETORA", "EMILIO WARWICK KERR PASTOR", "ERNESTINO LOPES DA SILVA PROF (Municipalizada)", "ERODICE PONTES DE QUEIROZ REV", "ESTHER GARCIA PROFA", "EURIPEDES SIMOES DE PAULA PROF", "EVANDRO CAVALCANTE LINS E SILVA", "FRANCISCO JOAO DE AZEVEDO PADRE", "FRANCISCO ROSWELL FREIRE", "GERSON DE MOURA MUZEL PROF (Municipalizada)", "GILIO DAVID LEONE PROF", "HEITOR VILLA-LOBOS MAESTRO", "HERBERT BALDUS", "HERMINIO SACCHETTA", "HILDA FERRAZ KFOURI (Paralisada em 2021)", "HILTON REIS SANTOS PROF", "HOMERO VAZ DO AMARAL", "ILDA VIEIRA VILELA", "INDIGENA GUARANI GWYRA PEPO", "IRMÃ CHARLITA", "ÍTIRO MUTO", "ITURBIDES BOLIVAR DE ALMEIDA SERRA PROF", "JACOB THOMAZITA PURA DE MIRANDA PROF", "JARDIM NORONHA V", "JAYR DE ANDRADE PROF", "JERONYMO MONTEIRO", "JESUS JOSE ATTAB PROF", "JOAO DA SILVA (Paralisada em 2017)", "JOAO GOULART PRESIDENTE", "JOAQUIM ALVARES CRUZ PROF", "JORGE SARAIVA", "JOSE BENTO RENATO MONTEIRO LOBATO", "JOSE DUARTE JR PROF", "JOSE EPHIM MINDLIN", "JOSE GERALDO DE LIMA PROF", "JOSE VIEIRA DE MORAES PROF", "JOSE XAVIER CORTEZ", "JUVENTINA MARCONDES DOMINGUES DE CASTRO PROFA", "KRUKUTU", "LAERTE RAMOS DE CARVALHO PROF DR", "LEDA GUIMARAES NATAL", "LEONEL BRIZOLA", "LEONOR FERNANDES COSTA ZACHARIAS", "LEVI CARNEIRO", "LOTAMENTO DAS GAVIOTAS II", "LUCAS ROSCHEL PRQUINHO", "MARIA AMELIA BRAZ PROFA", "MARIA DE LOURDES ALMEIDA SINGSILLI PROFA", "MARIA JUVENAL HOMEM DE MELLO PROFA", "MARIA LUIZA DE ANDRADE MARTINS ROQUE PROFA", "MARIAZINHA CONIGLIO", "MARIE DOMINEUC, MADRE", "MARIO ARMINANTE PROF", "MARIO LOPES LEAO DR", "MARISTELA DALL'OCA PROFA", "MARLENE ADUA FORTUNATO PROFA", "NAIR TOLEDO DAMIÃO PROFA", "NEIVA DE LOURDES ANDRADE PROFA", "OTONIEL ASSIS DE HOLANDA", "PAULINO NUNES ESPOSO", "PERILLIER MADEMOISELLE", "PRISCILIANA DUARTE DE ALMEIDA DONA", "RECANTO CAMPO BELO (Paralisada em 2017)", "REGINA MIRANDA BRANT de CARVALHO PROFA", "RENATA MENEZES DOS SANTOS PROF (Paralisada em 2020)", "RENE MUAWAD PRESIDENTE", "ROBERTO MANGE", "ROSSINE CAMARGO GUARNIERI", "SAMUEL WAINER", "SANTO DIAS DA SILVA", "SAVERIO FITTIPALDI", "SERGIO MURILLO RADUAN PROF.", "TANCREDO DE ALMEIDA NEVES PRES", "VERA ATHAYDE PEREIRA PROFA", "VICENTE DE PAULO DA COLEUTINHO GAL EXE", "VICENTINA APARECIDA TAMBORIM", "WASHINGTON ALVES NATEL", "ERNESTO NAZARETH", "VALDIR CONCEICAO DA SILVA PROFESSOR"];
+const schoolCIE=["925329", "925998", "005381", "038261", "907194", "005289", "909212", "005319", "039172", "050398", "917394", "924805", "044465", "046059", "044428", "924799", "005277", "916812", "925172", "093985", "902925", "038271", "037588", "036730", "044436", "036729", "924775", "902913", "923679", "005423", "925330", "925159", "044404", "003536", "924015", "041774", "005332", "041798", "046361", "044441", "923687", "037394", "036262", "906578", "036742", "923461", "005459", "901799", "925366", "005344", "048732", "472505", "925135", "902287", "902895", "901787", "043941", "479081", "906585", "005460", "920997", "924507", "902299", "038283", "036596", "925305", "908848", "415443", "005373", "005368", "925354", "005393", "101030", "037448", "923059", "050386", "906591", "005290", "925160", "921324", "005447", "048033", "017462", "038301", "925317", "461143", "044453", "039366", "925378", "917503", "909208", "924027", "925299", "005307", "035618", "005320", "925147", "039391", "924817", "914836", "039159", "913431", "041804", "041609", "044416", "924787", "902901", "083313", "037412", "925342", "094549", "011815", "011816"];
+function normalizeSchoolName(v=''){return String(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z0-9]/g,'')}
+function updateCIE(){
+  const typed=document.getElementById('school').value;
+  const idx=schoolNames.findIndex(name=>normalizeSchoolName(name)===normalizeSchoolName(typed));
+  document.getElementById('cie').value=typed?(idx>=0?schoolCIE[idx]:'Não localizado'):'';
+}
+const schoolInput=document.getElementById('school');
+const schoolOptions=document.getElementById('schoolOptions');
+let activeSchoolIndex=-1;
+function showSchoolOptions(){
+  const query=normalizeSchoolName(schoolInput.value);
+  const matches=schoolNames.map((name,index)=>({name,index}))
+    .filter(item=>!query||normalizeSchoolName(item.name).includes(query))
+    .slice(0,60);
+  schoolOptions.innerHTML='';
+  activeSchoolIndex=-1;
+  if(!matches.length){
+    schoolOptions.innerHTML='<div class="school-empty">Nenhuma unidade encontrada. Confira a digitação.</div>';
+  }else{
+    matches.forEach(item=>{
+      const option=document.createElement('button');
+      option.type='button';option.className='school-option';option.setAttribute('role','option');
+      option.textContent=item.name;option.setAttribute('aria-selected','false');
+      option.addEventListener('pointerdown',e=>{e.preventDefault();selectSchool(item.name);});
+      option.addEventListener('click',()=>selectSchool(item.name));
+      schoolOptions.appendChild(option);
+    });
+  }
+  schoolOptions.classList.remove('hidden');
+  schoolInput.setAttribute('aria-expanded','true');
+}
+function closeSchoolOptions(){
+  schoolOptions.classList.add('hidden');
+  schoolInput.setAttribute('aria-expanded','false');
+  activeSchoolIndex=-1;
+}
+function selectSchool(name){
+  schoolInput.value=name;
+  updateCIE();
+  closeSchoolOptions();
+  schoolInput.blur();
+}
+schoolInput.addEventListener('focus',showSchoolOptions);
+schoolInput.addEventListener('input',()=>{updateCIE();showSchoolOptions();});
+schoolInput.addEventListener('keydown',e=>{
+  const items=[...schoolOptions.querySelectorAll('.school-option')];
+  if(e.key==='ArrowDown'&&items.length){e.preventDefault();activeSchoolIndex=Math.min(activeSchoolIndex+1,items.length-1);}
+  else if(e.key==='ArrowUp'&&items.length){e.preventDefault();activeSchoolIndex=Math.max(activeSchoolIndex-1,0);}
+  else if(e.key==='Enter'&&!schoolOptions.classList.contains('hidden')&&items.length){e.preventDefault();selectSchool(items[Math.max(0,activeSchoolIndex)].textContent);return;}
+  else if(e.key==='Escape'){closeSchoolOptions();return;}
+  items.forEach((item,i)=>{item.classList.toggle('active',i===activeSchoolIndex);item.setAttribute('aria-selected',i===activeSchoolIndex?'true':'false');});
+  if(activeSchoolIndex>=0)items[activeSchoolIndex].scrollIntoView({block:'nearest'});
+});
+schoolInput.addEventListener('change',updateCIE);
+document.addEventListener('pointerdown',e=>{
+  if(!schoolInput.contains(e.target)&&!schoolOptions.contains(e.target))closeSchoolOptions();
+});
+document.getElementById('date').value=getLocalDateString();
+function escapeHtml(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function setupCanvas(id){
+  const c=document.getElementById(id),ctx=c.getContext('2d');
+  ctx.strokeStyle='#14283d';ctx.lineWidth=3.5;ctx.lineCap='round';ctx.lineJoin='round';
+  let drawing=false,last=null;
+  function point(clientX,clientY){
+    const r=c.getBoundingClientRect();
+    return {x:(clientX-r.left)*(c.width/r.width),y:(clientY-r.top)*(c.height/r.height)};
+  }
+  function begin(x,y){drawing=true;last=point(x,y);}
+  function move(x,y){if(!drawing)return;const p=point(x,y);ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p;}
+  function end(){drawing=false;last=null;}
+  if(window.PointerEvent){
+    c.addEventListener('pointerdown',e=>{e.preventDefault();begin(e.clientX,e.clientY);if(c.setPointerCapture){try{c.setPointerCapture(e.pointerId)}catch(_){}}});
+    c.addEventListener('pointermove',e=>{if(drawing){e.preventDefault();move(e.clientX,e.clientY)}});
+    ['pointerup','pointercancel','lostpointercapture','pointerleave'].forEach(ev=>c.addEventListener(ev,end));
+  }else{
+    c.addEventListener('mousedown',e=>{e.preventDefault();begin(e.clientX,e.clientY)});
+    window.addEventListener('mousemove',e=>move(e.clientX,e.clientY));
+    window.addEventListener('mouseup',end);
+    c.addEventListener('touchstart',e=>{if(e.touches.length){e.preventDefault();begin(e.touches[0].clientX,e.touches[0].clientY)}},{passive:false});
+    c.addEventListener('touchmove',e=>{if(e.touches.length){e.preventDefault();move(e.touches[0].clientX,e.touches[0].clientY)}},{passive:false});
+    ['touchend','touchcancel'].forEach(ev=>c.addEventListener(ev,end));
+  }
+}
+function getLocalDateString(date=new Date()){
+  const y=date.getFullYear(),m=String(date.getMonth()+1).padStart(2,'0'),d=String(date.getDate()).padStart(2,'0');
+  return `${y}-${m}-${d}`;
+}
+function clearSig(id){let c=document.getElementById(id);c.getContext('2d').clearRect(0,0,c.width,c.height)}
+setupCanvas('sigAnalyst');setupCanvas('sigSchool');
+function signature(id){
+  const c=document.getElementById(id),ctx=c.getContext('2d'),d=ctx.getImageData(0,0,c.width,c.height).data;
+  for(let i=3;i<d.length;i+=4)if(d[i])return c.toDataURL('image/png');
+  return '';
+}
+async function loadJsPDF(){
+  if(window.jspdf&&window.jspdf.jsPDF)return window.jspdf.jsPDF;
+  const urls=[
+    'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js',
+    'https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js'
+  ];
+  for(const src of urls){
+    try{
+      await new Promise((resolve,reject)=>{
+        const script=document.createElement('script');script.src=src;script.async=true;
+        script.onload=resolve;script.onerror=()=>{script.remove();reject(new Error('Falha ao carregar '+src))};
+        document.head.appendChild(script);
+      });
+      if(window.jspdf&&window.jspdf.jsPDF)return window.jspdf.jsPDF;
+    }catch(_){/* tenta a próxima CDN */}
+  }
+  throw new Error('Não foi possível carregar a biblioteca de PDF. Verifique a conexão e use “Imprimir / Salvar em PDF” como alternativa.');
+}
+const labels=[['Unidade escolar','school'],['Código CIE','cie'],['Data do atendimento','date'],['Analista responsável','analyst'],['Responsável na escola','schoolContact'],['Setor / ambiente','location'],['Tipo de atendimento','type'],['Equipamento / identificação','equipment'],['Marca / modelo','model'],['Patrimônio / série','asset'],['Descrição do atendimento (o que foi feito)','work']];
+function val(id){let v=document.getElementById(id).value.trim();if(id==='date'&&v){let [y,m,d]=v.split('-');return `${d}/${m}/${y}`}return v||'Não informado'}
+document.getElementById('reportForm').addEventListener('submit',e=>{e.preventDefault();if(!e.target.reportValidity())return;let sigA=signature('sigAnalyst'),sigS=signature('sigSchool');let rows=labels.map(([label,id])=>`<tr><td>${escapeHtml(label)}</td><td>${escapeHtml(val(id))}</td></tr>`).join('');
+let schoolSig=`<div class="signatures"><div>${sigA?`<img src="${sigA}">`:'<div style="height:75px"></div>'}<div class="signline">${escapeHtml(val('analyst'))}<br>Analista de suporte</div></div><div>${sigS?`<img src="${sigS}">`:'<div style="height:75px"></div>'}<div class="signline">${escapeHtml(val('signer'))}<br>${escapeHtml(val('signerRole'))}<br>Responsável pela unidade escolar</div></div></div>`;
+document.getElementById('formView').classList.add('hidden');let rv=document.getElementById('reportView');rv.classList.remove('hidden');rv.innerHTML=`<div class="report"><div class="reporthead"><div><b>SECRETARIA DA EDUCAÇÃO DO ESTADO DE SÃO PAULO</b><br><b>DIRETORIA DE ENSINO – REGIÃO SUL 3</b></div><div style="text-align:right">RELATÓRIO TÉCNICO<br>Data: ${escapeHtml(val('date'))}</div></div><hr><h1>RELATÓRIO DE ATENDIMENTO TÉCNICO</h1><p class="sub">Registro de suporte e manutenção em unidade escolar</p><table>${rows}</table><p style="font-size:12px;margin-top:20px">Declaro que o atendimento descrito neste relatório foi realizado e que o resultado e as observações acima foram apresentados ao responsável da unidade escolar.</p>${schoolSig}<p class="foot">Documento elaborado para registro formal do atendimento técnico realizado no âmbito da Unidade Regional de Ensino Sul 3. Cadastro de unidades: relação institucional DER Sul 3 – Escolas Estaduais, Atualização 2026.</p></div><div class="actions no-print" style="max-width:850px;margin:16px auto;padding:0 10px"><button class="btn" onclick="downloadPDF()">Compartilhar / Salvar PDF</button><button class="btn alt" onclick="printReport()">Imprimir / Salvar em PDF</button><button class="btn alt" onclick="backToForm()">Voltar e editar</button><button class="btn alt" onclick="resetAll()">Novo relatório</button></div>`;window.scrollTo(0,0)});
+async function downloadPDF(){
+  if(!document.querySelector('#reportView .report')){
+    alert('Gere o relatório antes de criar o PDF.');
+    return;
+  }
+  const button=document.querySelector('#reportView .actions .btn');
+  const oldText=button?button.textContent:'';
+  try{
+    if(button){button.disabled=true;button.textContent='Preparando PDF...'}
+    const jsPDF=await loadJsPDF();
+    const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
+    const pageW=pdf.internal.pageSize.getWidth();
+    const pageH=pdf.internal.pageSize.getHeight();
+    const margin=14, contentW=pageW-margin*2;
+    let y=16;
+
+    function addLine(text, opts={}){
+      const size=opts.size||10;
+      const bold=!!opts.bold;
+      const indent=opts.indent||0;
+      pdf.setFont('helvetica',bold?'bold':'normal');
+      pdf.setFontSize(size);
+      const lines=pdf.splitTextToSize(String(text||'Não informado'),contentW-indent);
+      const lineH=size*0.45;
+      if(y+lines.length*lineH>pageH-16){pdf.addPage();y=16}
+      pdf.text(lines,margin+indent,y);
+      y+=lines.length*lineH+ (opts.after===undefined?2:opts.after);
+    }
+    function addSection(label,value){
+      pdf.setFont('helvetica','bold');pdf.setFontSize(9);
+      const labelLines=pdf.splitTextToSize(label,contentW);
+      if(y+labelLines.length*4+10>pageH-16){pdf.addPage();y=16}
+      pdf.text(labelLines,margin,y);y+=labelLines.length*4.2;
+      pdf.setFont('helvetica','normal');pdf.setFontSize(10);
+      const valueLines=pdf.splitTextToSize(String(value||'Não informado'),contentW);
+      if(y+valueLines.length*4.6+5>pageH-16){pdf.addPage();y=16}
+      pdf.text(valueLines,margin,y);y+=valueLines.length*4.6+4;
+      pdf.setDrawColor(205,213,220);pdf.line(margin,y-1,pageW-margin,y-1);
+    }
+
+    pdf.setFont('helvetica','bold');pdf.setFontSize(10);
+    pdf.text('SECRETARIA DA EDUCAÇÃO DO ESTADO DE SÃO PAULO',margin,y);y+=5;
+    pdf.text('DIRETORIA DE ENSINO – REGIÃO SUL 3',margin,y);
+    pdf.setFontSize(9);pdf.setFont('helvetica','normal');
+    pdf.text('RELATÓRIO TÉCNICO',pageW-margin,y-5,{align:'right'});
+    y+=11;
+    pdf.setFont('helvetica','bold');pdf.setFontSize(15);
+    pdf.text('RELATÓRIO DE ATENDIMENTO TÉCNICO',pageW/2,y,{align:'center'});y+=6;
+    pdf.setFont('helvetica','normal');pdf.setFontSize(9);
+    pdf.text('Registro de suporte e manutenção em unidade escolar',pageW/2,y,{align:'center'});y+=9;
+
+    const pdfLabels=[
+      ['Unidade escolar','school'],['Código CIE','cie'],['Data do atendimento','date'],
+      ['Analista responsável','analyst'],['Responsável na escola','schoolContact'],
+      ['Setor / ambiente','location'],['Tipo de atendimento','type'],
+      ['Equipamento / identificação','equipment'],['Marca / modelo','model'],
+      ['Patrimônio / série','asset'],
+      ['Descrição do atendimento (o que foi feito)','work']
+    ];
+    pdfLabels.forEach(([label,id])=>addSection(label,val(id)));
+
+    y+=3;
+    addLine('Declaro que o atendimento descrito neste relatório foi realizado e apresentado ao responsável da unidade escolar.',{size:9,after:7});
+
+    const sigA=signature('sigAnalyst'),sigS=signature('sigSchool');
+    const colW=(contentW-12)/2, sigY=y;
+    if(sigY+38>pageH-14){pdf.addPage();y=16}
+    const top=y;
+    if(sigA){pdf.addImage(sigA,'PNG',margin,top,colW,19,'sigA','FAST')}
+    if(sigS){pdf.addImage(sigS,'PNG',margin+colW+12,top,colW,19,'sigS','FAST')}
+    y=top+21;
+    pdf.setDrawColor(50,50,50);
+    pdf.line(margin,y,margin+colW,y);
+    pdf.line(margin+colW+12,y,pageW-margin,y);
+    pdf.setFont('helvetica','bold');pdf.setFontSize(8);
+    pdf.text(val('analyst'),margin+colW/2,y+4,{align:'center',maxWidth:colW});
+    pdf.text(val('signer'),margin+colW+12+colW/2,y+4,{align:'center',maxWidth:colW});
+    pdf.setFont('helvetica','normal');pdf.setFontSize(8);
+    pdf.text('Analista de suporte',margin+colW/2,y+8,{align:'center'});
+    pdf.text(val('signerRole'),margin+colW+12+colW/2,y+8,{align:'center',maxWidth:colW});
+    pdf.text('Responsável pela unidade escolar',margin+colW+12+colW/2,y+12,{align:'center',maxWidth:colW});
+
+    const filename='Relatorio_Tecnico_Sul3_'+(document.getElementById('date').value||'atendimento')+'.pdf';
+    const blob=pdf.output('blob');
+    let file=null;
+    try{if(typeof File!=='undefined')file=new File([blob],filename,{type:'application/pdf'});}catch(_){file=null;}
+    let canShareFile=false;
+    if(file&&navigator.share){
+      try{canShareFile=typeof navigator.canShare==='function'?navigator.canShare({files:[file]}):true;}catch(_){canShareFile=false;}
+    }
+    if(canShareFile){
+      await navigator.share({files:[file],title:'Relatório Técnico Sul 3'});
+    }else{
+      const url=URL.createObjectURL(blob);
+      const link=document.createElement('a');
+      link.href=url;link.download=filename;link.rel='noopener';link.style.display='none';
+      document.body.appendChild(link);link.click();link.remove();
+      // Safari/iOS pode abrir o PDF em vez de baixar; nesse caso, use Compartilhar > Salvar em Arquivos.
+      setTimeout(()=>URL.revokeObjectURL(url),120000);
+      alert('PDF gerado. Se o arquivo abrir em uma nova aba, toque em Compartilhar e escolha “Salvar em Arquivos”. Se o download não iniciar, use “Imprimir / Salvar em PDF”.');
+    }
+  }catch(err){
+    if(err && err.name==='AbortError') return;
+    alert('Não foi possível gerar/compartilhar o PDF. Verifique a conexão com a internet. Como alternativa, use “Imprimir / Salvar em PDF”. Detalhe: '+(err.message||err));
+  }finally{
+    if(button){button.disabled=false;button.textContent=oldText}
+  }
+}
+function printReport(){
+  // Chamada síncrona a partir do clique: necessária para o diálogo de impressão
+  // funcionar em navegadores que bloqueiam impressão iniciada após tarefas assíncronas.
+  window.focus();
+  window.print();
+}
+function backToForm(){document.getElementById('reportView').classList.add('hidden');document.getElementById('formView').classList.remove('hidden');window.scrollTo(0,0)}
+function resetAll(){if(!confirm('Limpar os campos e iniciar um novo relatório?'))return;document.getElementById('reportForm').reset();updateCIE();document.getElementById('date').value=getLocalDateString();clearSig('sigAnalyst');clearSig('sigSchool');document.getElementById('reportView').classList.add('hidden');document.getElementById('formView').classList.remove('hidden');window.scrollTo(0,0)}
+</script></body></html>
